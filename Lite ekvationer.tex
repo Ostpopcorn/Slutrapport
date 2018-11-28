@@ -1,0 +1,48 @@
+
+\begin{equation}
+    N(x)=\frac{1}{\sqrt{2\pi}}\int\displaylimits_{-\infty}^{x}\exp\left({\cfrac{-y^2}{2}}\right)\partial y 
+\end{equation}
+
+\begin{equation}
+    \sigma_i^2= \frac{1}{(T-1)\tau}\sum\limits_{t=1}^T(r_{i,t}-\mu_i\tau)
+\end{equation}
+
+$\tau$ är $1$ antalet bankdagar 
+
+
+$$c = SN(d_1)-Ke^{-rT}N(d_2) $$
+
+
+$$p=Ke^{-rT}N(-d_2)- SN(-d_1) $$
+
+$$w =[w_1 \hdots  w_N]$$
+$$\mu =[\mu_1 \hdots  \mu_N]$$
+
+$$\displaystyle\sum_{j=1}^{N}\mu_jw_j = \mu_T w$$
+
+$$\displaystyle\sum_{i=1}^{N} \displaystyle\sum_{j=1}^{N} w_i \sigma_{i,j} w_j = w^TCw$$
+
+$$d_1=\frac{\ln{\frac{S}{K}}+(r+\frac{\sigma^2}{2})T}{\sigma\sqrt{T}}$$
+
+$$d_2=\frac{\ln{\frac{S}{K}}+(r-\frac{\sigma^2}{2})T}{\sigma\sqrt{T}}$$
+
+
+$$\text{VaR} = W\sigma\varphi\sqrt{T}$$
+
+$$\varphi=N^{-1}(\alpha)$$
+
+$\displaystyle\sum_{j=1}^N w_j = \textbf{1}^T w = 1$
+
+$w^TCw$
+
+$\textbf{1}^T=1$
+
+$w_R = \cfrac{ C^{-1}\textbf{1}}{\textbf{1}C^{-1}\textbf{1}}$
+
+$\mu^Tw-\frac{1}{2}w^TCw$
+
+$\textbf{1}^Tw=1$
+
+$w_T= C^{-1} \left( \mu - \cfrac{\textbf{1} C^{-1} \mu -1}{\textbf{1}^T C^{-1}\textbf{1}}\textbf{1} \right)$
+
+$w_E = \lambda w_T + (1-\lambda) w_R\text{, där }\lambda \in {\rm I\!R}$

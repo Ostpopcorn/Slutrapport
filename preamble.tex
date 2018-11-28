@@ -1,0 +1,50 @@
+
+\usepackage{url}
+\usepackage[swedish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{natbib}
+\bibliographystyle{chicago}
+\usepackage{subfiles}
+\usepackage[hidelinks]{hyperref} %get hyperlinks
+
+\usepackage{geometry}% Change Margins to ``normal''
+	\geometry{a4paper,left=20.4mm,right=20.4mm,	top=20.4mm,bottom=20.4mm}
+
+\usepackage{parskip} %blankrad instead of indrag
+
+\usepackage{graphicx}
+\usepackage{tabularx,colortbl}
+\definecolor{Gray}{gray}{0.9}
+
+
+
+%Get the Math to work properly
+\usepackage{amsmath, amsthm, amssymb,dsfont,calc}
+\usepackage{mathtools}
+\usepackage{amsfonts}
+
+%Better control of cells in tables
+\usepackage{makecell}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\usepackage{multicol} %möjliggöra multiplier ac kolumner
+\usepackage{multirow} %möjliggöra multiplier ac kolumner
+\newcommand\Tstrut{\rule{0pt}{2.6ex}}         % = `top' strut
+\newcommand\Bstrut{\rule[-0.9ex]{0pt}{0pt}}   % = `bottom' strut
+%\usepackage{caption} 
+%\captionsetup[table]{skip=5pt}
+
+% HEADER AND FOOTER
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+\pagestyle{fancy}
+\lhead{\includegraphics[width=0.03\textwidth]{res/christmas_stocking_base_by_ohiotaku-d5oxc5g.png}} %Här kan ni byta logga till en som passar er bättre
+\chead{Räkna med pengar}
+\rhead{\dateToUse}
+
+\lfoot{TFYY51 \\ LIPS Teknisk rapport}
+\cfoot{}
+\rfoot{\gruppnamn}
+\renewcommand{\footrulewidth}{0.4pt} % För att få streck över footer
